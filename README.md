@@ -25,6 +25,6 @@ const css = uno.build({
 	extensions: [".tsx", ".mdx"], // string of file types to parse
 	skip: [^(?!.*\/debug\/)src\/.*component\.ts$], // regex array to filter paths
 	log: false, // log to console?
-	...unoConfig // a unocss config object
+	...unoConfig // the rest of your unocss config
 })
 ```
