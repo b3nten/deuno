@@ -11,7 +11,7 @@ import {
   type UserConfig,
 } from "https://esm.sh/unocss@0.56.4";
 import { walk } from "https://deno.land/std/fs/mod.ts";
-import aLog from "aLog";
+import aLog from "https://deno.land/x/alog/mod.ts";
 
 const log = new aLog("DEUNO");
 
