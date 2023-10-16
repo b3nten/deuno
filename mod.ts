@@ -85,7 +85,9 @@ export async function build(
     const result = await uno.generate(files.join("\n"));
 
     if(mergedConfig.outfile){
-      await Deno.writeTextFile(mergedConfig.outfile, result.css);
+      await Deno.writeTextFile(mergedConfig.outfile, mergedConfig.resets
+        ? `${mergedConfig.resets.join(" ")} ${result.css}`
+        : result.css);
     }
 
     mergedConfig.log &&
