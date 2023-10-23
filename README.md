@@ -1,10 +1,20 @@
-![deuno loves unocss](/.github/banner.png)
+<div align="center">
+<br />
 
-# Deuno
+![Deuno](.github/banner.png)
 
-Deuno is a tiny zero-configuration library for running unocss inside deno.
+<h3>Deuno 🦕</h3>
 
-## Usage
+#### Deno and UnoCSS <3
+
+[![Npm package yearly downloads](https://badgen.net/npm/dy/express)](https://npmjs.com/package/express)
+[![GitHub stars](https://img.shields.io/github/stars/freeCodeCamp/freeCodeCamp.svg?style=social&label=Star&maxAge=2592000)](https://github.com/freeCodeCamp/freeCodeCamp)
+[![NuGet stable version](https://badgen.net/nuget/v/newtonsoft.json)](https://nuget.org/packages/newtonsoft.json)
+
+*Deuno is a tiny zero-configuration library for running unocss inside deno.*
+</div>
+
+### Usage
 
 ``` typescript
 import uno from "https://deno.land/x/deuno/mod.ts"
@@ -14,7 +24,7 @@ const css = await uno.build() // returns css as string.
 
 By default, Deuno uses `presetWind` and the `tailwind` style reset.
 
-## Configuration options
+### Configuration options
 ```typescript
 import uno from "https://deno.land/x/deuno/mod.ts"
 
